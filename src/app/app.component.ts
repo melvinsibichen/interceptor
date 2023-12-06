@@ -16,11 +16,11 @@ export class AppComponent implements OnInit  {
   ngOnInit() {
     this.dataService.getData().subscribe(
       (response) => {
-        // On successful response, assign the data to the component property
+      
         this.data = response;
       },
       (error) => {
-        // Error handling can be done here if needed
+      
         console.error('Error:', error);
       }
     );
